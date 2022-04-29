@@ -13,24 +13,24 @@
                     <Text text="hola mundo" />
 
                     <Panel headerText="{i18n>selectionScreen}">
-                        <Label id="labelShipName" labelFor="
-                        shipName" text="{i18n>shipName}" class="sapUiSmallMargin"/>
-                        <Input id="shipName" width="200px" class="sapUiSmallMarginEnd"/>
+                        <Label id="labelShipName" labelFor="shipName" 
+                            text="{i18n>shipName}" class="sapUiSmallMargin"/>
+                        <Input id="shipName" width="200px" value="{selectionScreen>/ShipName}" class="sapUiSmallMarginEnd"/>
                         <Label id="labelCountry" text="{i18n>country}" class="sapUiSmallMargin"/>
                         <Select id="slCountry" selectedKey="{selectionScreen>/CountryKey}"
-                        forceSelection="false" items="{selectionScreen>/Countries}">
+                            forceSelection="false" items="{selectionScreen>/Countries}">
                             <items>
                             <core:Item key="{selectionScreen>key}" 
                                 text="{selectionScreen>text}"/>
                             </items>
                         </Select>
-                <Button id="btnFilters" text="{i18n>btnFilter}"
-                    icon="sap-icon://filter" press="onFilter" 
-                    class="sapUiSmallMarginEnd"/>
-                <Button id="btnClearFilters" text="{i18n>btnClearFilters}"
-                    icon="sap-icon://clear-filter" press="onClearFilter"
-                     class="sapUiSmallMarginEnd"/>
-                    </Panel>
+                        <Button id="btnFilters" text="{i18n>btnFilter}"
+                            icon="sap-icon://filter" press="onFilter" 
+                            class="sapUiSmallMarginEnd"/>
+                        <Button id="btnClearFilters" text="{i18n>btnClearFilters}"
+                            icon="sap-icon://clear-filter" press="onClearFilter"
+                            class="sapUiSmallMarginEnd"/>
+                            </Panel>
 
 
                     <Panel>

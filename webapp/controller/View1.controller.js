@@ -24,8 +24,11 @@ sap.ui.define([
                 if (oData.ShipName !== "") {
                 filters.push(new Filter("ShipName", 
                     FilterOperator.Contains, oData.ShipName));
+                    console.log("nombre a buscar: " + oData.ShipName);
                 }
                 
+                console.log("nombre2 a buscar: " + oData.ShipName);
+                console.log("ContryKey a buscar: " + oData.CountryKey);
                 if (oData.CountryKey !== "") {
                     filters.push(new Filter("Country", 
                     FilterOperator.EQ, oData.CountryKey));
